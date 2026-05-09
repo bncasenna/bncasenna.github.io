@@ -1,7 +1,136 @@
-:root{
-
+:root {
+    --black: #000000;
+    --dark: #0C0C0D;
+    --medium: #1A1A1B;
+    --grey: #2E2E2F;
+    --violet: #C477D9;
+    --roxo: #6E00B3;
+    --purple: #8A2BE2;
+    --azul: #0000FF;
+    --blau: #557BE0;
+    --blue: #7B77F2;
+    --sky: #7B6CD9;
+    --green: #2B8C55;
+    --pink: #D971C7;
+    --rose: #FD3DB5;
+    --rosa: #E30B5D;
+    --light: #FDFDFE;
+    --white: #FFFFFF;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
 }
 
-.header{
-    border: 5px solid red;
+
+body {
+    margin: 0;
+}
+
+.header {
+    background: linear-gradient(to bottom, var(--pink), var(--purple),var(--blau));
+    padding: 6px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: var(--black);
+}
+
+.header p{
+    font-size: 12px;
+    top: 1px;
+    color: var(--black);
+}
+
+main {
+    padding: 6.3%;
+    background: var(--dark);
+    justify-content: space-between;
+}
+
+.myPic{
+    max-width: 25%;
+    height: auto;
+    left: 10%;
+}
+.myPic:hover {
+    transform: scale(1.2);
+}
+
+.container p {
+    padding: 10px;
+    text-align: justify;
+    line-height: 1.5;
+    color: var(--light);
+    width: 30%;
+    position: fixed;
+    right: 34%;
+    top: 20%;
+    border: 1px solid transparent;
+    background: linear-gradient(var(--dark), var(--dark)) padding-box, 
+                linear-gradient(to left, var(--roxo), var(--violet), var(--blue), var(--azul), var(--azul), var(--blau), var(--sky), var(--pink), var(--pink), var(--rosa)) border-box;
+    border-radius: 14px;
+}
+
+.container p strong {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: linear-gradient(to bottom, var(--blau), var(--purple), var(--rose));
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    text-color:var(--black);
+}
+
+.footer img{
+    max-width: 7%;
+}
+
+.footer ul {
+    display: flex;       
+    position: fixed;    
+    left: 5%;            
+    bottom: 10px;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer li {
+    font-size: 35px;
+    transition: transform 0.3s;
+}
+
+.footer li a {
+    color: var(--black);
+    text-decoration: none;
+}
+
+.footer li:hover {
+    transform: scale(1.2);
+}
+
+.idioma {
+    position: fixed;
+    right: 5%;
+    bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.idioma a {
+    text-decoration: none;
+    display: inline-block; /* Essencial para o scale funcionar */
+    transition: transform 0.3s ease;
+}
+
+.idioma a:hover {
+    transform: scale(1.3);
 }
