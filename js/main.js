@@ -9,7 +9,7 @@ const traducoes = {
     },
     de: {
         titulo: "<i>✨ Willkommen in meinem digitalen Raum! ✨</i>",
-        bio: "Ich heiße <i>Bianca Senna</i>, 29 Jahre alt und Pädagogin. Aktuell wage ich mich in ein neues Universe: die Webentwicklung. Ich habe diesen Raum geschaffen, um all mein Wissen in die Praxis umzusetzen. Hier teile ich meine <i>Diplome, Zertifikate, Projekte</i> und die Erfahrungen, die mich in diese neue Lebensphase geführt haben – eine Zeit, in der ich mein inneres Kind wiederentdecken und meinen Träumen folgen kann. Ich hoffe, dass dieser Raum in Zukunft meine Entwicklung zur Technologieexpertin dokumentieren wird."
+        bio: "Ich heiße <i>Bianca Senna</i>, Ich bin 29 Jahre alt und Pädagogin. Aktuell wage ich mich in ein neues Universe: die Webentwicklung. Ich habe diesen Raum geschaffen, um all mein Wissen in die Praxis umzusetzen. Hier teile ich meine <i>Diplome, Zertifikate, Projekte</i> und die Erfahrungen, die mich in diese neue Lebensphase geführt haben – eine Zeit, in der ich mein inneres Kind wiederentdecken und meinen Träumen folgen kann. Ich hoffe, dass dieser Raum in Zukunft meine Entwicklung zur Technologieexpertin dokumentieren wird."
     }
 };
 
