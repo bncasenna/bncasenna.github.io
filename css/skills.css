@@ -1,4 +1,4 @@
-:root {
+:root{
     --black: #000000;
     --dark: #0C0C0D;
     --medium: #1A1A1B;
@@ -20,18 +20,18 @@
         Tahoma, Verdana, sans-serif;
 }
 
-body {
+body{
     margin: 0;
 }
 
-.header {
+.header{
     background: linear-gradient(to bottom, 
         var(--pink),  var(--purple),var(--blau)); 
     padding: 6px;
     text-align: center;
 }
 
-.header h1 {
+.header h1{
     margin: 0;
     color: var(--black);
 }
@@ -42,66 +42,155 @@ body {
     color: var(--black);
 }
 
-main {
-    padding: 10%;
-    padding-top: 5%;
-    padding-bottom: 1.8%;
+main{
+    padding-top: 1%;
+    padding-bottom: 6%;
     background: var(--dark);
 }
 
-/* Estilo do Lightbox ------------------------------------------------------------------------*/
-.gallery {
+.soft, .hard{
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    color: var(--light);
+    padding-bottom: 21px;
+}
+/* ------------------------------------------------------------------------*/
+.skills{
     display: grid;
-    grid-template-columns: repeat(auto-fit, 
-        minmax(250px, 1fr));
-    gap: 9px;
-    position: center;
+    grid-template-columns: 1fr 1fr; 
+    gap: 2px;
+
+    padding-left: 80px;
+    padding-right: 80px;
+    
+    width: auto; 
+    box-sizing: border-box;
 }
 
-.gallery-item {
-    width: 85%;
+.softImg {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.softImg img {
+    display: flex;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+        minmax(150px, 1fr));
+    grid-template-rows: auto;
+    grid-gap: 8px;
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.gallery img{
+    width: 100%;
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-.gallery-item:hover {
+.gallery img:hover{
     transform: scale(1.05);
 }
 
-/* Estilo do Lightbox ------------------------------------------------------------------------*/
-.skipL {
+#modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000e0;
+}
+
+#modal img{
+    max-width: 70%;
+    max-height: 75%;
+    border-radius: 14px;
+}
+
+.btnClose{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    
+    transform: translateY(-50%);  
+    right: 20%;
+    border: none;
+    outline: none;
+    color: var(--grey);
+    cursor: pointer;
+    border-radius: 14px;
+    z-index: 1;
+}
+
+.skipL{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     width: 50px;
     height: 50px;
     top: 50%;
+    transform: translateY(-50%);
+    left: 2%;
     border: none;
     outline: none;
     font-size: 30px;
     color: var(--grey);
     background: var(--medium);
-    cursor: pointer;
-    position: fixed;
-    left: 2%;
+    cursor: pointer; 
     border-radius: 14px;
 }
 
 .skipR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     width: 50px;
     height: 50px;
     top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
     border: none;
     outline: none;
     font-size: 30px;
     color: var(--grey);
     background: var(--medium);
     cursor: pointer;
-    position: fixed;
-    right: 2%;
     border-radius: 14px;
 }
 
-.skipL:before, .skipR:before {
+.skipL:before, .skipR:before, .btnClose:before{
     content: '';
     background: linear-gradient(45deg,  #E30B5D, 
         #C477D9, #6E00B3, #8A2BE2,#7B77F2, 
@@ -118,22 +207,22 @@ main {
     animation: glowing 20s linear infinite;
     opacity: 0;
     transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+    border-radius: 14px;
 }
 
-.skipL:active, .skipR:active {
+.skipL:active, .skipR:active, .btnClose:active{
     color: #000
 }
 
-.skipL:active:after, .skipR:active:after {
+.skipL:active:after, .skipR:active:after, .btnClose:active::after{
     background: transparent;
 }
 
-.skipL:hover:before, .skipR:hover:before {
+.skipL:hover:before, .skipR:hover:before, .btnClose:hover:before{
     opacity: 1;
 }
 
-.skipL:after, .skipR:after {
+.skipL:after, .skipR:after, .btnClose:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -142,17 +231,19 @@ main {
     background: #111;
     left: 0;
     top: 0;
-    border-radius: 10px;
+    border-radius: 14px;
 }
+
+/* ------------------------------------------------------------------------*/
 
 .footer {
     background: linear-gradient(to bottom, 
         var(--blau), var(--purple), var(--rose));
-    padding: 10.1px;
+    padding: 10.5px;
     display: flex;
     justify-content: center;
     gap: 15px;
-    text-color: var(--black);
+    color: var(--black);
 }
 
 .footer img{

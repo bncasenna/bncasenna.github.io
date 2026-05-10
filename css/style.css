@@ -25,7 +25,8 @@ body {
 }
 
 .header {
-    background: linear-gradient(to bottom, var(--pink), var(--purple),var(--blau));
+    background: linear-gradient(to bottom, 
+    var(--pink), var(--purple),var(--blau));
     padding: 6px;
     text-align: center;
 }
@@ -78,8 +79,9 @@ figcaption strong {
     top: 20%;
     border: 1px solid transparent;
     background: linear-gradient(var(--dark), var(--dark)) padding-box, 
-                linear-gradient(to left, var(--roxo), var(--violet), var(--blue), var(--azul), 
-                var(--azul), var(--blau), var(--sky), var(--pink), var(--pink), var(--rosa)) border-box;
+        linear-gradient(to left, var(--roxo), var(--violet), var(--blue), 
+        var(--azul), var(--azul), var(--blau), var(--sky), var(--pink), 
+        var(--pink), var(--rosa)) border-box;
     border-radius: 14px;
 }
 
@@ -98,24 +100,29 @@ figcaption strong {
 }
 
 .skip {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     width: 50px;
     height: 50px;
     top: 50%;
+    transform: translateY(-50%);
+    right: 2%;
     border: none;
     outline: none;
     font-size: 30px;
     color: var(--grey);
     background: var(--medium);
     cursor: pointer;
-    position: fixed;
-    right: 2%;
     border-radius: 14px;
 }
 
 .skip:before {
     content: '';
-    background: linear-gradient(45deg,  #E30B5D, #C477D9, #6E00B3, #8A2BE2,#7B77F2, #7B6CD9,
-     #0000FF, #557BE0,  #D971C7, #FD3DB5, #E30B5D);
+    background: linear-gradient(45deg,  #E30B5D, #C477D9, 
+     #6E00B3, #8A2BE2,#7B77F2, #7B6CD9, #0000FF, 
+     #557BE0,  #D971C7, #FD3DB5, #E30B5D);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -151,16 +158,18 @@ figcaption strong {
     background: #111;
     left: 0;
     top: 0;
-    border-radius: 10px;
+    border-radius: 14px;
 }
+/* ------------------------------------------------------------------------*/
 
 .footer {
-    background: linear-gradient(to bottom, var(--blau), var(--purple), var(--rose));
+    background: linear-gradient(to bottom, 
+        var(--blau), var(--purple), var(--rose));
     padding: 10.5px;
     display: flex;
     justify-content: center;
     gap: 15px;
-    text-color:var(--black);
+    color: var(--black);
 }
 
 .footer img{
