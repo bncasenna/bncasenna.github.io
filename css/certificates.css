@@ -16,16 +16,17 @@
     --rosa: #E30B5D;
     --light: #FDFDFE;
     --white: #FFFFFF;
-    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    font-family: 'Segoe UI', 
+        Tahoma, Verdana, sans-serif;
 }
-
 
 body {
     margin: 0;
 }
 
 .header {
-    background: linear-gradient(to bottom, var(--pink), var(--purple),var(--blau));
+    background: linear-gradient(to bottom, 
+        var(--pink),  var(--purple),var(--blau)); 
     padding: 6px;
     text-align: center;
 }
@@ -42,62 +43,50 @@ body {
 }
 
 main {
-    padding: 5%;
+    padding: 10%;
+    padding-top: 5%;
+    padding-bottom: 1.8%;
     background: var(--dark);
 }
 
-.myPic {
-    max-width: 25%;
+/* Estilo do Lightbox ------------------------------------------------------------------------*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 
+        minmax(250px, 1fr));
+    gap: 9px;
+    position: center;
+}
+
+.gallery-item {
+    width: 85%;
     height: auto;
-    left: 10%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    object-fit: contain;
 }
 
-.myPic:hover {
-    transform: scale(1.2);
+.gallery-item:hover {
+    transform: scale(1.05);
 }
 
-figcaption {
+/* Estilo do Lightbox ------------------------------------------------------------------------*/
+.skipL {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    border: none;
+    outline: none;
+    font-size: 30px;
     color: var(--grey);
-
-}
-
-figcaption strong {
-    font-size: 1.3em; 
-    padding: 0 3px;
-}
-
-
-.container p {
-    padding: 10px;
-    text-align: justify;
-    line-height: 1.5;
-    color: var(--light);
-    width: 30%;
+    background: var(--medium);
+    cursor: pointer;
     position: fixed;
-    right: 34%;
-    top: 20%;
-    border: 1px solid transparent;
-    background: linear-gradient(var(--dark), var(--dark)) padding-box, 
-                linear-gradient(to left, var(--roxo), var(--violet), var(--blue), var(--azul), 
-                var(--azul), var(--blau), var(--sky), var(--pink), var(--pink), var(--rosa)) border-box;
+    left: 2%;
     border-radius: 14px;
 }
 
-.container p strong {
-    display: block;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.status img{
-    position: fixed;
-    right: 10%;
-    max-width: 20%;
-    height: auto;
-    top: 185px;
-}
-
-.skip {
+.skipR {
     width: 50px;
     height: 50px;
     top: 50%;
@@ -112,10 +101,12 @@ figcaption strong {
     border-radius: 14px;
 }
 
-.skip:before {
+.skipL:before, .skipR:before {
     content: '';
-    background: linear-gradient(45deg,  #E30B5D, #C477D9, #6E00B3, #8A2BE2,#7B77F2, #7B6CD9,
-     #0000FF, #557BE0,  #D971C7, #FD3DB5, #E30B5D);
+    background: linear-gradient(45deg,  #E30B5D, 
+        #C477D9, #6E00B3, #8A2BE2,#7B77F2, 
+        #7B6CD9,  #0000FF, #557BE0,  #D971C7, 
+        #FD3DB5, #E30B5D);
     position: absolute;
     top: -2px;
     left:-2px;
@@ -130,19 +121,19 @@ figcaption strong {
     border-radius: 10px;
 }
 
-.skip:active {
+.skipL:active, .skipR:active {
     color: #000
 }
 
-.skip:active:after {
+.skipL:active:after, .skipR:active:after {
     background: transparent;
 }
 
-.skip:hover:before {
+.skipL:hover:before, .skipR:hover:before {
     opacity: 1;
 }
 
-.skip:after {
+.skipL:after, .skipR:after {
     z-index: -1;
     content: '';
     position: absolute;
@@ -155,12 +146,13 @@ figcaption strong {
 }
 
 .footer {
-    background: linear-gradient(to bottom, var(--blau), var(--purple), var(--rose));
-    padding: 10.5px;
+    background: linear-gradient(to bottom, 
+        var(--blau), var(--purple), var(--rose));
+    padding: 10.1px;
     display: flex;
     justify-content: center;
     gap: 15px;
-    text-color:var(--black);
+    text-color: var(--black);
 }
 
 .footer img{
