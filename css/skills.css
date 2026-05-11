@@ -43,8 +43,7 @@ body{
 }
 
 main{
-    padding-top: 1%;
-    padding-bottom: 6%;
+    padding: 11.5%;
     background: var(--dark);
 }
 
@@ -239,7 +238,8 @@ main{
 .footer {
     background: linear-gradient(to bottom, 
         var(--blau), var(--purple), var(--rose));
-    padding: 10.5px;
+    padding: 10px;
+    padding-bottom: 1%;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -254,7 +254,7 @@ main{
     display: flex;       
     position: fixed;    
     left: 5%;            
-    bottom: 10px;
+    bottom: 19px;
     gap: 15px;
     list-style: none;
     padding: 0;
@@ -279,19 +279,22 @@ main{
 .idioma {
     position: fixed;
     right: 5%;
-    bottom: 20px;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+    transform: translateY(-1%);
+    bottom: 1px;
+    gap: 20px;
     font-size: 30px;
     display: flex;
-    gap: 15px;
 }
 
-.idioma a {
-    text-decoration: none;
-    display: inline-block;
+.idioma img {
+    display: flex;
+    max-width: 40px;
     transition: transform 0.3s ease;
 }
 
-.idioma a:hover {
+.idioma img:hover {
     transform: scale(1.3);
 }
 

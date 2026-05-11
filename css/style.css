@@ -43,7 +43,7 @@ body {
 }
 
 main {
-    padding: 5%;
+    padding: 9%;
     background: var(--dark);
 }
 
@@ -83,6 +83,7 @@ figcaption strong {
         var(--azul), var(--azul), var(--blau), var(--sky), var(--pink), 
         var(--pink), var(--rosa)) border-box;
     border-radius: 14px;
+    border: 5px solid red;
 }
 
 .container p strong {
@@ -165,7 +166,8 @@ figcaption strong {
 .footer {
     background: linear-gradient(to bottom, 
         var(--blau), var(--purple), var(--rose));
-    padding: 10.5px;
+    padding: 15px;
+    padding-bottom: 1%;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -180,11 +182,12 @@ figcaption strong {
     display: flex;       
     position: fixed;    
     left: 5%;            
-    bottom: 10px;
+    bottom: 19px;
     gap: 15px;
     list-style: none;
     padding: 0;
     margin: 0;
+    border: 2px solid red;
 }
 
 
@@ -205,7 +208,7 @@ figcaption strong {
 .idioma {
     position: fixed;
     right: 5%;
-    bottom: 20px;
+    bottom: 29px;
     font-size: 30px;
     display: flex;
     gap: 15px;
