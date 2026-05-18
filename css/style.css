@@ -76,19 +76,20 @@ figcaption strong {
     width: 30%;
     position: fixed;
     right: 34%;
-    top: 20%;
+    top: 35%;
     border: 1px solid transparent;
     background: linear-gradient(var(--dark), var(--dark)) padding-box, 
         linear-gradient(to left, var(--roxo), var(--violet), var(--blue), 
         var(--azul), var(--azul), var(--blau), var(--sky), var(--pink), 
         var(--pink), var(--rosa)) border-box;
     border-radius: 14px;
+
 }
 
 .container p strong {
     display: block;
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .status img{
@@ -96,7 +97,8 @@ figcaption strong {
     right: 10%;
     max-width: 20%;
     height: auto;
-    top: 185px;
+    top: 30%;
+    
 }
 
 .skip {
@@ -206,19 +208,22 @@ figcaption strong {
 .idioma {
     position: fixed;
     right: 5%;
-    bottom: 29px;
+    padding-top: 1%;
+    padding-bottom: 1.5%;
+    transform: translateY(-1%);
+    bottom: 1px;
+    gap: 20px;
     font-size: 30px;
     display: flex;
-    gap: 15px;
 }
 
-.idioma a {
-    text-decoration: none;
-    display: inline-block;
+.idioma img {
+    display: flex;
+    max-width: 40px;
     transition: transform 0.3s ease;
 }
 
-.idioma a:hover {
+.idioma img:hover {
     transform: scale(1.3);
 }
 
