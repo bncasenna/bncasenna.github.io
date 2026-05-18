@@ -11,6 +11,8 @@
     --blue: #7B77F2;
     --sky: #7B6CD9;
     --green: #2B8C55;
+    --INFJ: #2e7d32;
+    --mbti: #4caf50;
     --pink: #D971C7;
     --rose: #FD3DB5;
     --rosa: #E30B5D;
@@ -69,21 +71,10 @@ main{
     box-sizing: border-box;
 }
 
-.softImg {
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
 
-.softImg img {
-    display: flex;
-    width: 300px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 14px;
-}
+
+
+
 
 .gallery{
     display: grid;
@@ -109,7 +100,44 @@ main{
 .gallery img:hover{
     transform: scale(1.05);
 }
+ 
+.mbti{
+   
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    border-top: 8px solid var(--mbti-green);
+     border-radius: 14px;
+}
 
+.mbti h1{
+    hh
+}
+
+.mbti p{
+    jj
+}
+
+
+
+
+
+.softImg {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.softImg img {
+    display: flex;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 14px;
+}
 #modal{
     display: none;
     justify-content: center;

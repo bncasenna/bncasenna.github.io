@@ -83,7 +83,6 @@ figcaption strong {
         var(--azul), var(--azul), var(--blau), var(--sky), var(--pink), 
         var(--pink), var(--rosa)) border-box;
     border-radius: 14px;
-    border: 5px solid red;
 }
 
 .container p strong {
@@ -187,7 +186,6 @@ figcaption strong {
     list-style: none;
     padding: 0;
     margin: 0;
-    border: 2px solid red;
 }
 
 
